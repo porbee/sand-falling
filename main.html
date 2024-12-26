@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="source/setup.css">
+    <meta charset="utf-8" />
+</head>
+<body>
+    <main>
+    </main>
+    <br>
+    &nbsp&nbsp&nbsp&nbsp&nbsp&nbspValues per side: <br><br>
+    &nbsp&nbsp&nbsp&nbspPixels: <input type="text" placeholder="900" id="res">
+    Cells: <input type="text" placeholder="50" id="sp">
+    Fullness: <input type="text" placeholder="3" id="full">
+    <button onclick="window.location.reload()">UPDATE</button>
+    <button onclick="toggle(this);" value="ON" id="grid">SHOW GRID</button>
+    <script>
+        let res, spaces, totalPercent;
+        res = parseInt(document.getElementById("res").value);
+        spaces = parseInt(document.getElementById("sp").value);
+        totalPercent = parseInt(document.getElementById("full").value)
+    </script>
+    <script src="source/main.js"></script>
+</body>
+</html>
